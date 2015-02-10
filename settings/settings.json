@@ -40,6 +40,15 @@
 	}
 },
 { 
+	"name": "font_base",
+	"label": "Base Font", 
+	"type": "font", 
+	"value": "Montserrat",
+	"help": {
+		"input": "See <a href='http://google.com/fonts' target='_blank'>Google fonts</a> for more information. The theme default is 'Montserrat'."
+	}
+},
+{ 
 	"name": "logo_display", 
 	"label": "Display logo", 
 	"type": "radio", 

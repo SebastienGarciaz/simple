@@ -7,8 +7,10 @@
                 <p>{{ page.meta_description }}</p>
             {% endif %}
         </header>
-        {% editable_region contact %}
-        {% endeditable_region %}
+        <section class="text-block">
+            {% editable_region contact %}
+            {% endeditable_region %}
+        </section>
         {% form 'contact' %}
             {% if form.errors %}
                 <p class="alert alert-error" role="alert">Whoops, it looks like there were some errors.</p>

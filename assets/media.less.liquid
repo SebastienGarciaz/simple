@@ -5,8 +5,47 @@
 figure {
     margin: 0 0 @grid-section-padding;
     
+    // Fix whitespace
     img {
         display: block;
+    }
+    
+    // Clear floats
+    &.media-content {
+        clear: both;
+    }
+    
+    // Alignments
+    @media (min-width : @screen-xs) {
+        &.align-left,
+        &.align-right {
+            max-width: 40%;
+            
+            // Responsive videos need a fixed width
+            // As they are position absolute
+            &.media-video-embed {
+                width: 40%;
+            }
+        }
+        &.align-left {
+            float: left;
+            margin-right: @grid-section-padding;
+        }
+        &.align-center {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 66%;
+            
+            // Responsive videos need a fixed width
+            // As they are position absolute
+            &.media-video-embed {
+                width: 66%;
+            }
+        }
+        &.align-right {
+            float: right;
+            margin-left: @grid-section-padding;
+        }
     }
 }
 img {
